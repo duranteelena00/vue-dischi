@@ -1,0 +1,92 @@
+/* Generals */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #1e2d3b;
+  padding-top: 100px;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Utils  */
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+header {
+  background-color: #2e3a46;
+  height: 70px;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+header img {
+  height: 50px;
+}
+
+header .container {
+  display: flex;
+}
+
+header select {
+  position: absolute;
+  right: 0;
+  margin-right: 15px;
+  align-self: center;
+}
+
+/* Album */
+
+#album-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#album-container .card {
+  background-color: #2e3a46;
+  padding: 20px;
+  margin: 20px;
+  flex-basis: 200px;
+  text-align: center;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+#album-container .card img {
+  width: 100%;
+  height: auto;
+}
+
+#album-container .card .title {
+  color: #fff;
+  margin: 15px 0;
+  text-transform: uppercase;
+  flex-grow: 1;
+}
+
+#album-container .card .author,
+#album-container .card .year {
+  color: #808080;
+  font-size: 21px;
+}
+
+#album-container .card .year {
+  font-size: 16px;
+}
